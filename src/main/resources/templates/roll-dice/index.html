@@ -1,0 +1,20 @@
+<!Doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title></title>
+</head>
+<body>
+    <div>
+        <form action="#" th:action="@{/roll-dice}" th:object="${guess}" method="post">
+            <input type="number" min="1" max="6" th:field="${guess.guess}" />
+            <button type="submit">Enter Guess</button>
+        </form>
+    </div>
+    <div th:if="${response != null}">
+        <h3>Your guess: <span th:text="${userGuess}"></span> actual number:<span th:text="${randoNum}"></span></h3>
+        <h1 th:text="${response}"></h1>
+    </div>
+</body>
+
+</html>
