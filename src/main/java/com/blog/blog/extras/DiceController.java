@@ -1,6 +1,6 @@
-package com.blog.blog;
+package com.blog.blog.extras;
 
-import com.blog.blog.models.Guess;
+import com.blog.blog.extras.Guess;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

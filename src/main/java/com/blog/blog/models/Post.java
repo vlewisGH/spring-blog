@@ -12,6 +12,12 @@ public class Post {
     private String title;
     @Column(columnDefinition = "TEXT")
     private String message;
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    User user;
+
+
+
 
     public Post() {
     }

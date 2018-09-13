@@ -1,6 +1,5 @@
 package com.blog.blog.controllers;
 
-import com.blog.blog.Services.PostRepository;
 import com.blog.blog.Services.PostService;
 import com.blog.blog.models.Post;
 import org.springframework.stereotype.Controller;
@@ -8,7 +7,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.view.RedirectView;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 

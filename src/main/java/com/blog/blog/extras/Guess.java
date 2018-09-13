@@ -1,4 +1,4 @@
-package com.blog.blog.models;
+package com.blog.blog.extras;
 
 public class Guess {
     private int guess;

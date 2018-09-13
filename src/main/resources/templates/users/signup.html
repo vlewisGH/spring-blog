@@ -1,0 +1,22 @@
+<!Doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title></title>
+</head>
+<body>
+<div style="height: 50vh;width:60vw;margin:auto">
+    <form action="#" th:action="@{/posts/create}" th:object="${post}" method="post">
+        <label for="title">Title:</label>
+        <input type="text" style="width:100%" id="title" name="title" th:field="${post.title}" /><br /><br />
+        <label for="message">Message:</label>
+        <textarea rows="5" style="width:100%"  id="message" name="message" th:field="${post.message}" /><br /><br />
+        <input type="submit" />
+    </form>
+</div>
+<br />
+<a th:href="@{/posts}">back</a>
+
+</body>
+
+</html>
