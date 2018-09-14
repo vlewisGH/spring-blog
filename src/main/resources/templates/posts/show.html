@@ -1,11 +1,18 @@
-< !Doctype html>
+<!Doctype html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <title></title>
 </head>
 <body>
-<h1>Show</h1>
+    <div style="height: 50vh">
+        <h1 th:text="${post.getTitle()}"></h1>
+        <br />
+        <br />
+        <article th:text="${post.getMessage()}"></article>
+    </div>
+    <br />
+    <a th:href="@{/posts}">back</a>
 
 </body>
 
